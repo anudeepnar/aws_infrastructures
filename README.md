@@ -37,6 +37,16 @@
 ## AWS Cost Efficient Application
 ![Architecture diagram](infras/ai_ecs.png)
 
+* Cost Savings: "Reduced cloud infrastructure monthly burn rate by nearly $1500 in 4 environments by running data services as infrastructure as service
+
+* Performance: "Improved application response time by 200ms by placing Data and API layers in the same private subnet and utilizing internal Network Load Balancers."
+
+* Efficiency: "Eliminated manual image management overhead by implementing JFrog lifecycle policies, automatically cleaning up unused artifacts older than 30 days."
+
+* Established a centralized observability stack using AWS CloudWatch for log aggregation, synthetic monitoring, and alarms routed via SNS
+
+* Hardened infrastructure security by deploying a Bastion Host for controlled SSH access to private data subnets and implementing granular Security Group rules to minimize the attack surface.
+
 <br>
 
 ## AWS EKS Application
