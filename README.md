@@ -24,6 +24,14 @@
 ## S3 - CloudFront Application
 ![Architecture diagram](infras/s3-cloudfront.png)
 
+* Serverless CI/CD Architecture: Designed and implemented a serverless deployment pipeline for a high-traffic static website using AWS Lambda, CodeBuild, and S3, reducing server management overhead to zero.
+
+* Content Delivery & Security: Configured Amazon CloudFront as a CDN to lower global latency by ~60%, integrated with AWS WAF (Web Application Firewall) to block malicious traffic (SQL injection, XSS) at the edge.
+
+* Cost Reduction: Slashed CI/CD operational costs by 30% by eliminating CodeBuild build minutes and Lambda invocation fees by migrating to GitHub Actions.
+
+* Deployment Velocity: Decreased build-to-deploy time by 50% by utilizing GitHub Actions job execution and removing the latency of cross-service triggers.
+
 <br>
 
 ## AWS Cost Efficient Application
