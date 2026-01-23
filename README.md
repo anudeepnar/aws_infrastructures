@@ -43,13 +43,21 @@
 
 * **Efficiency:** Eliminated manual image management overhead by implementing JFrog lifecycle policies, automatically cleaning up unused artifacts older than 30 days.
 
-* **Observability** Established a centralized observability stack using AWS CloudWatch for log aggregation, synthetic monitoring, and alarms routed via SNS
+* **Observability:** Established a centralized observability stack using AWS CloudWatch for log aggregation, synthetic monitoring, and alarms routed via SNS
 
-* **Security** Hardened infrastructure security by deploying a Bastion Host for controlled SSH access to private data subnets and implementing granular Security Group rules to minimize the attack surface.
+* **Security:** Hardened infrastructure security by deploying a Bastion Host for controlled SSH access to private data subnets and implementing granular Security Group rules to minimize the attack surface.
 
 <br>
 
 ## AWS EKS Application
 ![Architecture diagram](infras/support.png)
+
+* **Authored & Maintained K8s Manifests:** Wrote and managed declarative YAML configurations (Deployments, Services, ConfigMaps, and Secrets) to deploy multi-tier microservices (NextJS, Wordpress and NodeJS Middleware) on EKS worker nodes.
+
+* **Service Discovery Configuration:** Defined Kubernetes Service objects (ClusterIP) to ensure seamless internal communication between the Middleware, Frontend, and WordPress pods within the cluster.
+
+* **Root Cause Analysis:** Diagnosed and resolved common pod lifecycle errors (e.g., CrashLoopBackOff, ImagePullBackOff, OOMKilled) by analyzing container logs and pod events via kubectl.
+
+* **Log Analysis:** Investigated application failures by retrieving and analyzing logs from diverse workloads (WordPress, NextJS) to assist developers in identifying code-level vs. infrastructure-level bugs.
 
 <br>
